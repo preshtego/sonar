@@ -16,10 +16,11 @@ pipeline {
         timeout(time: 5, unit: 'MINUTES') {
           waitForQualityGate abortPipeline: true
           } catch (error) {
-             println "Error happened, continuing"
+              println "Error happened, continuing"
           }  
         }
       }
     }
   }
 }
+
